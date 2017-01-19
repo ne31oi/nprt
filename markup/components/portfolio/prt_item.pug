@@ -1,0 +1,7 @@
+mixin prt_item(item)
+    .prt_item
+        .hovereffect
+            .img
+            .overlay
+                h2= item.title
+                a.info(href=item.link_text)= item.link_text

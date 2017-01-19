@@ -2,25 +2,29 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
-    include ../components/example/example.pug
-    include ../components/footer/footer.pug
+    include ../components/about/about.pug
+    include ../components/portfolio/portfolio.pug
 
     head
         +head(head.defaults)
     body.page
         main.wrap
             header.header
-                nav
-                    label(for="slide1") 1
-                    label(for="slide2") 1
-                    label(for="slide3") 1
-                    label(for="slide4") 1
+                .content
+                    h1.logo n31
+                    nav
+                        label(for="slide1") Home
+                        label(for="slide2") Portfolio
+                        label(for="slide3") Skills
+                        label(for="slide4") Contact
+
+
             input#slide1(type="radio" name="slades" checked)
             section.slide.slide1
-                h1 ляляля тополя костяя любит труляля
+                +_about
             input#slide2(type="radio" name="slades" )
             section.slide.slide2
-                h1 TEXT1
+                +portfolio
             input#slide3(type="radio" name="slades" )
             section.slide.slide3
                 h1 TEXT1

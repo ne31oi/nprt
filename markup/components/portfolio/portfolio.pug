@@ -1,0 +1,11 @@
+include prt_item.pug
+mixin portfolio(data)
+    .portfolio
+        .content
+
+            - var prt_items = [ {title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"},{title:"1",link_text:"2"} ];
+            for item in prt_items
+                +prt_item(item)
+
+
+
