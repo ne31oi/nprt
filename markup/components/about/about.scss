@@ -3,3 +3,56 @@
     height: 100%;
    // border: 2px solid red;
 }
+.about{
+    &__left{
+        width: 50%;
+        height: 100%;
+        padding-top: 150px;
+        h1{
+            float: right;
+            font-size: 5em;
+        }
+        h1,span{
+            display: block;
+            text-align: right;
+        }
+        .name{
+            font-size: 4em;
+
+        }
+        .work{
+            font-size: .5em;
+        }
+    }
+}
+.line{
+    position: absolute;
+
+    height: 100%;
+
+    top: 0;
+
+    transform: skew(-22deg);
+    &1{
+        background: rgba(136,45,33,.3);
+        left: 100%;
+        width: 150px;
+    }
+    &2{
+        background: rgba(136,25,343,.2);
+        left: 100%;
+        width: 700px;
+    }
+}
+[id^='slide1']:checked + .slide{
+    .line1{
+    left: 550px;
+    z-index: 100;
+    transition: left .65s;
+    transition-delay: .3s}
+    .line2{
+        left: -250px;
+        transition: left .65s;
+        transition-delay: .4s
+    }
+}
