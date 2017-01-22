@@ -1,0 +1,141 @@
+.skills{
+    h2{
+
+        text-shadow: 1px 1px 1px #000;
+        float: right;
+        font-size: 5em;
+        font-variant:small-caps;
+    }
+    &__left{
+        float: left;
+        width: 30%;
+        height: 100%;
+        padding-top: 150px;
+
+        .timeline{
+            float: right;
+            height: 100%;
+            position: relative;
+
+            &:before {
+
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 23px;
+                height: 100%;
+                width: 4px;
+                background: gainsboro;
+            }
+            &__date{
+                position: relative;
+
+                @include cf;
+                min-height: 200px;
+                width: 400px;
+            }
+            &-img{
+                background: gainsboro;
+                width: 50px;
+                height: 50px;
+                border: solid rgb(103, 58, 183) 5px;
+                border-radius: 50%;
+                position: absolute;
+                right: 1px;
+
+                &:first-child{
+                    //top: -1px;
+                }
+                &:last-child{
+                    bottom: 0!important;
+                }
+            }
+            &-contant{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding-right: 70px;
+
+                h3{
+                    font-size: 2em;
+
+                }
+            }
+
+        }
+
+    }
+    &__rigth{
+        float: right;
+        width: 70%;
+        height: 100%;
+        padding-top: 150px;
+        h2{
+            padding-right: 270px;
+        }
+    }
+    section{
+        height: 30%;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+    &__icon{
+        float: right;
+        width: 160px;
+        height: 160px;
+        display: block;
+        margin-left: 10px;
+        background: 50% 50% no-repeat;
+        background-size:contain;
+
+
+
+        &--html{
+            background-image: url("../../static/img/general/icon/HTML5.png");
+            animation-delay: .5s;
+        }
+        &--css{
+            background-image: url("../../static/img/general/icon/CSS3.png");
+            animation-delay: .7s;
+        }
+        &--bs{
+            background-image: url("../../static/img/general/icon/bootstrap.png");
+            animation-delay: .9s;
+        }
+        &--js{
+            background-image: url("../../static/img/general/icon/Javascript.png");
+            animation-delay: .6s;
+        }
+        &--jq{
+            background-image: url("../../static/img/general/icon/jquery-icon.png");
+            animation-delay: .8s;
+        }
+        &--pug{
+            background-image: url("../../static/img/general/icon/pug.png");
+            animation-delay: .4s;
+        }
+        &--sass{
+            background-image: url("../../static/img/general/icon/sass.png");
+            animation-delay: .6s;
+        }
+        &--gulp{
+            background-image: url("../../static/img/general/icon/gulp.png");
+            animation-delay: .8s;
+        }
+
+
+
+    }
+}
+
+
+[id^='slide3']:checked + .slide{
+    .skills__icon{
+        @extend .animated;
+        @extend .fadeInLeft;
+
+    }
+
+}

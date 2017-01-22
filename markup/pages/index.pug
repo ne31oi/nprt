@@ -4,6 +4,8 @@ html(class="no-js", lang="ru")
     include ../components/head/head.pug
     include ../components/about/about.pug
     include ../components/portfolio/portfolio.pug
+    include ../components/skills/skills.pug
+    include ../components/contact/contact.pug
 
     head
         +head(head.defaults)
@@ -27,10 +29,10 @@ html(class="no-js", lang="ru")
                 +portfolio
             input#slide3(type="radio" name="slades" )
             section.slide.slide3
-                h1 TEXT1
+                +skills
             input#slide4(type="radio" name="slades" )
             section.slide.slide4
-                h1 TEXT1
+                +contact
 
 
         script(src='%=static=%js/separate-js/svg4everybody.min.js')

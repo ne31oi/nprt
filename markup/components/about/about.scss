@@ -5,12 +5,18 @@
 }
 .about{
     &__left{
+        float: left;
         width: 50%;
         height: 100%;
         padding-top: 150px;
+
+
         h1{
             float: right;
             font-size: 5em;
+
+            z-index: 102;
+
         }
         h1,span{
             display: block;
@@ -27,7 +33,7 @@
 }
 .line{
     position: absolute;
-
+    z-index: -2;
     height: 100%;
 
     top: 0;
@@ -53,6 +59,7 @@
     .line2{
         left: -250px;
         transition: left .65s;
-        transition-delay: .4s
+        transition-delay: .4s;
     }
+
 }

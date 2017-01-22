@@ -102,23 +102,29 @@ html, body {
 }
 .slide1{
 
-    background: url("../img/general/slide3.jpg");
-    background-size:cover;
+    background-image: url("../img/general/slide3.jpg");
+
 }
 .slide2{
-    background: url("../img/general/slide2.jpg");
-    background-size:cover;
+    background-image: url("../img/general/slide2.jpg");
+
 }
 .slide3{
-    background: url("../img/general/slide3.jpg");
-    background-size:cover;
+    background-image: url("../img/general/slide3.jpg");
+
 }
 .slide4{
-    background: url("../img/general/slide4.jpg");
-    background-size:cover;
+    background-image: url("../img/general/slide4.jpg");
+
 }
 [id^='slide']:checked + .slide{
     left: 0;
     z-index: 100;
     transition: left 0.65s;
+    .prt_item{
+        @extend .animated;
+        @extend .fadeInUp;
+
+    }
+
 }
