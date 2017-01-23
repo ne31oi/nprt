@@ -1,0 +1,65 @@
+.contacts{
+    width:100%;
+    text-align: center;
+    display: block;
+    padding-top: 200px;
+    &__item{
+        display: inline-block;
+        .fa-stack-2x{
+            text-shadow: #673ab7 2px 2px 2px;
+        }
+        a{
+
+            color: #eeeeee;
+            &:hover{
+                .fa{
+
+                    &-vk{
+                        color: #45668e;
+
+                    }
+                    &-telegram{
+                        color: #0088cc;
+                    }
+                    &-envelope{
+                        color: #dd4b39;
+                    }
+                    &-skype{
+                        color: #00aff0;
+                    }
+
+                    &-stack-1x{
+                       transform: scale(1.1);
+                        text-shadow: #000 2px 2px 2px;
+
+                   }
+                }
+
+            }
+
+        }
+    }
+}
+[id^='slide4']:checked + .slide{
+    .contacts__item{
+        @extend .animated;
+        @extend .bounceInUp;
+        &--vk{
+            animation-delay: .1s;
+
+        }
+        &--telegram{
+            animation-delay: .2s;
+        }
+        &--email{
+            animation-delay: .3s;
+        }
+        &--skype{
+            animation-delay: .4s;
+        }
+    }
+
+
+
+
+}

@@ -1,7 +1,9 @@
 mixin prt_item(item)
     .prt_item
         .hovereffect
-            .img
+            .img(class=item.href)
             .overlay
                 h2= item.title
-                a.info(href=item.link_text)= item.link_text
+                a.info(href=item.href)
+                    =item.link_text
+

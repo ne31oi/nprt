@@ -1,12 +1,30 @@
 mixin contact(data)
     .contact
         .content
-            .about__left
+            .contacts
+                .contacts__item.contacts__item--vk
+                    a(href="https://vk.com/ne31oi")
+                        <span class="fa-stack fa-5x">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-vk fa-stack-1x"></i>
+                        </span>
+                .contacts__item.contacts__item--telegram
+                    a(href="https://telegram.me/ne31oi")
+                        <span class="fa-stack fa-5x">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-telegram fa-stack-1x"></i>
+                        </span>
+                .contacts__item.contacts__item--email
+                    a(href="mailto:ne31oi@gmail.com")
+                        <span class="fa-stack fa-5x">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-envelope fa-stack-1x"></i>
+                        </span>
+                .contacts__item.contacts__item--skype
+                    a(href="skype:ne31oiken")
+                        <span class="fa-stack fa-5x">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-skype fa-stack-1x"></i>
+                        </span>
 
-                .line.line1
-                .line.line2
-                h1 Hello,| my name
-                    span.name NE31OI
-                    span.work Frontend & Web Developer
-                    span.work Web Designer
 
