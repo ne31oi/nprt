@@ -1,4 +1,7 @@
 .skills{
+    h3{
+        text-shadow: 1px 1px 1px #000;
+    }
     h2{
 
         text-shadow: 1px 1px 1px #000;
@@ -56,9 +59,11 @@
                 height: 100%;
                 padding-right: 70px;
 
-                h3{
+                h3,p{
+                    margin-top:7px;
                     font-size: 2em;
-
+                    color: #eee;
+                    text-shadow: 1px 1px 1px #333;
                 }
             }
 
@@ -135,6 +140,21 @@
     .skills__icon{
         @extend .animated;
         @extend .fadeInLeft;
+
+    }
+    h2{
+        @extend .animated;
+        @extend .fadeInLeft;
+    }
+    .timeline{
+        @extend .animated;
+        @extend .bounceIn;
+        animation-delay: 1s;
+        h3,p{
+            @extend .animated;
+            @extend .fadeInRight;
+            animation-delay: 1s;
+        }
 
     }
 
